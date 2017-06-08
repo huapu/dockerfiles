@@ -9,3 +9,6 @@ RUN apt-get update \
 
 COPY src/*.js /usr/local/analyzer/
 WORKDIR /usr/local/analyzer
+
+EXPOSE 20202
+CMD phantomjs moofushi.js
